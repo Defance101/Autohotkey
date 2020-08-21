@@ -1,0 +1,10 @@
+XButton2:: ;On/Off with key XButton2
+    Clickactive := !Clickactive
+    If Clickactive
+        SetTimer Click, 001 ;Clicks every 100ms
+    Else
+        SetTimer Click, Off
+Return
+Click:
+    Click
+Return
